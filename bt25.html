@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>BUBBLE</h2>
+      </div>
+      <nav>
+        <ul>
+          <li class="active"><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#company">Company</a></li>
+          <li><a href="#time-tracking">Time Tracking</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#statistics">Statistics</a></li>
+        </ul>
+      </nav>
+      <div class="favorites">
+        <h4>Favs</h4>
+        <ul>
+          <li><a href="#pocketpulse">PocketPulse App</a></li>
+          <li><a href="#tapnest">TapNest Mobile App</a></li>
+          <li><a href="#apple-store">Apple Store</a></li>
+        </ul>
+      </div>
+      <div class="settings">
+        <button><a href="#settings">Settings</a></button>
+        <button><a href="#support">Support</a></button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <header class="main-header">
+        <h1 id="dashboard">Dashboard</h1>
+        <div class="user-info">
+          <img src="user-avatar.jpg" alt="User Avatar" class="user-avatar">
+          <p>Jackie Wiza</p>
+        </div>
+      </header>
+
+      <section id="company" class="metrics">
+        <div class="metric-card">
+          <h3>February Spend</h3>
+          <p class="value">$67,545.00</p>
+          <p class="change positive">+5.14% increased vs last month</p>
+        </div>
+        <div class="metric-card">
+          <h3>Companies Profit</h3>
+          <p class="value">$37,810.00</p>
+          <p class="change positive">+3.06% increased vs last month</p>
+        </div>
+        <div class="metric-card">
+          <h3>Allocated Budget</h3>
+          <p class="value">$83,292.00</p>
+          <p class="change negative">-4.02% decreased vs last month</p>
+        </div>
+        <div class="metric-card">
+          <h3>Total Cashback</h3>
+          <p class="value">$32,584.00</p>
+          <p class="change positive">+2.09% increased vs last month</p>
+        </div>
+      </section>
+
+      <section id="time-tracking" class="overview">
+        <div class="summary">
+          <h3>Daily Market Summary</h3>
+          <div class="progress">
+            <div class="progress-circle">
+              <p>50%</p>
+            </div>
+          </div>
+        </div>
+        <div class="performance">
+          <h3>Performance Overview</h3>
+          <canvas id="performance-chart"></canvas>
+        </div>
+        <div class="highlights">
+          <h3>Market Highlights</h3>
+          <ul>
+            <li>Payment from Quickcart - $6,320.00</li>
+            <li>Refund from Buybiss - $652.00</li>
+            <li>Revenue from TrendMart - $965.00</li>
+            <li>Payment from Elite Market - $680.00</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="transactions">
+        <h3>Transactions</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bennie Conroy</td>
+              <td>smitham@gmail.com</td>
+              <td>$71,000.00</td>
+              <td>25 May, 2024</td>
+              <td class="status active">Active</td>
+            </tr>
+            <tr>
+              <td>Dr. Wallace Feil</td>
+              <td>amelia@gmail.com</td>
+              <td>$39,000.00</td>
+              <td>25 May, 2024</td>
+              <td class="status active">Active</td>
+            </tr>
+            <tr>
+              <td>Andy Funk</td>
+              <td>albin7sg@gmail.com</td>
+              <td>$23,000.00</td>
+              <td>23 May, 2024</td>
+              <td class="status active">Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
